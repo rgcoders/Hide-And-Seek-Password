@@ -8,3 +8,17 @@ function showLogInPwd(pwd) {
 	}
 }
 
+// Update password
+function showUpdatePwd() {
+	var x = document.getElementById('current-pw');
+	var y = document.getElementById('new-pw');
+	var arr = [x, y];
+		arr.forEach(function (arg, index) {
+
+			if (arg.type === "password") {
+				arg.type = "text";
+			} else {
+				arg.type = "password";
+			}
+		})
+};
